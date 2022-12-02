@@ -10,4 +10,5 @@ foreach ($input as $calories) {
     }
     $elves[$elf] = isset($elves[$elf]) ? $elves[$elf] + $calories : $calories;
 }
-echo max($elves);
+arsort($elves);
+echo array_sum(array_slice($elves, 0, 3));
