@@ -16,7 +16,6 @@ for ($elf = 0; $elf < count($backpacks); $elf += 3) {
         $backpacks[$elf+2]
     );
 
-    array_unique($elfCommonItems);
     $commonItem = array_shift($elfCommonItems);
 
     $charValue = ord($commonItem);
